@@ -1,3 +1,4 @@
+import { useGlobalCtx } from "../../context/global";
 import Cart from "../cart/Cart";
 import "./Product.css";
 import { ChevronLeft } from "lucide-react";
@@ -6,6 +7,7 @@ import { useLocation,Link } from 'react-router-dom';
 export default function Product() {
   const location = useLocation();
   const { product } = location.state;
+  const { addItemToCart } = useGlobalCtx();
   // console.log(product);
 
   return (
@@ -121,7 +123,9 @@ export default function Product() {
         </div>
         <div className="btn-divs">
           <button className="prod-btn">share design</button>
-          <button className="prod-btn">add to cart</button>
+          <button className="prod-btn"
+            onClick={() => addItemToCart(product)}
+          >add to cart</button>
         </div>
       </section>
       <div id="cart_container">
