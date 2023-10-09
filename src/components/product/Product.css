@@ -85,11 +85,11 @@
 }
 #prod-details {
   margin: 0 40px;
-  line-height: 0.25;
+  line-height: 0.1;
 }
 
 .prod-name span {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .reviews {
   padding: 20px 0;

@@ -4,12 +4,11 @@ export default function Journey() {
   return (
     <main id="wrapper">
       <section className="journey-container">
-        <div className="">
+        <div>
           <div className="heading">
             <h2>The Journey</h2>
           </div>
           <div>
-            <div className="progress-bar"></div>
             <div className="bg-logo content-container">
               <div>
                 <h2>The roots</h2>

@@ -30,8 +30,8 @@
 }
 .team-card img {
     width:100%;
-    object-fit: contain;
-    flex-grow:1;
+    /* height: 50%; */
+    object-fit: fill;
 }
 
 .card-container {

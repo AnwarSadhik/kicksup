@@ -11,6 +11,16 @@ body {
   src: url("/assets/fonts/Product_Sans.ttf");
 }
 
+@font-face {
+  font-family: "GO_BOLD";
+  src: url("/assets/fonts/Gobold_Regular.otf");
+}
+
+h1 {
+  font-family: "GO_BOLD",sans-serif;
+  font-size: 2rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;

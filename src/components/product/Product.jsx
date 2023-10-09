@@ -43,7 +43,7 @@ export default function Product() {
 
           <section id="prod-details">
             <div className="prod-name">
-              <h2>{product?.name}</h2>
+              <h1>{product?.name}</h1>
               <span>by kicksup</span>
             </div>
             <div className="reviews">
