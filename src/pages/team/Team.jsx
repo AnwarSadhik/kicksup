@@ -21,7 +21,7 @@ export default function Team() {
           </div>
         </div>
         <div className="team-card">
-          <img src="/assets/tonikroos.jpg" alt="Avatar"  className="fix-image"/>
+          <img src="/assets/tonikroos.jpg" alt="Avatar" className="fix-image"/>
           <div className="card-container">
               Toni kroos <br />
             Product developer
