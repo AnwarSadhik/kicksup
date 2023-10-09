@@ -1,0 +1,14 @@
+
+#store_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    max-width: 96%;
+    margin:0 auto;
+    margin-top: 1rem;
+    padding: 0 40px;
+}
+#cart_section {
+    margin-top: 1rem;
+}
