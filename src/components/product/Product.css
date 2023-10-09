@@ -151,8 +151,11 @@
   min-height: 35px;
   min-width: 20px;
   height: 100%;
-  width:60%;
+  width:100%;
   background-color: grey;
+}
+.front div:nth-child(3) {
+  background-color: #00a1de;
 }
 
 .front {

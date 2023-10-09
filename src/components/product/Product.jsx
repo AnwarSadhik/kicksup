@@ -1,32 +1,39 @@
 import Cart from "../cart/Cart";
 import "./Product.css";
 import { ChevronLeft } from "lucide-react";
+import { useLocation,Link } from 'react-router-dom';
 
 export default function Product() {
+  const location = useLocation();
+  const { product } = location.state;
+  // console.log(product);
+
   return (
     <main id="prod-wrapper">
       <section id="prod-container">
         <div className="prod-header">
+          <Link to="/">
           <ChevronLeft size={40} className="left-ico" />
+          </Link>
           <h2>your design space</h2>
         </div>
         <section className="hero-layout">
           <div className="hero">
-            <img src="/assets/shoe2.png" alt="hero" />
+            <img src={product?.image} alt="hero" />
           </div>
           <div className="hero-prod">
             <img
-              src="/assets/shoe2.png"
+              src={product?.image}
               alt="hero-preview"
               className="hero-preview"
             />
             <img
-              src="/assets/shoe2.png"
+              src={product?.image}
               alt="hero-preview"
               className="hero-preview"
             />
             <img
-              src="/assets/shoe2.png"
+              src={product?.image}
               alt="hero-preview"
               className="hero-preview"
             />
@@ -34,7 +41,7 @@ export default function Product() {
 
           <section id="prod-details">
             <div className="prod-name">
-              <h2>KSL 01</h2>
+              <h2>{product?.name}</h2>
               <span>by kicksup</span>
             </div>
             <div className="reviews">
@@ -43,7 +50,7 @@ export default function Product() {
             </div>
             <div className="pricing">
               <div className="price-wrap">
-                <h2>Rs. 2000 /-</h2>
+                <h2>Rs. {product?.price}/-</h2>
                 <p>Get an exclusive 20% off shopping with HDFC bank</p>
               </div>
             </div>
@@ -51,7 +58,8 @@ export default function Product() {
               <h2>Front</h2>
               <div></div>
               <div></div>
-              <div></div>
+              <div>
+              </div>
             </div>
             <div className="flex front">
               <h2>Middle</h2>
@@ -73,6 +81,7 @@ export default function Product() {
             </div>
             <div className="flex front">
               <h2>Size</h2>
+              <span>6</span>
               <span>7</span>
               <span>8</span>
               <span>9</span>
