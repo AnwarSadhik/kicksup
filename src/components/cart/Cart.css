@@ -1,13 +1,14 @@
 #cart-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 86vh;
+  min-height: 82vh;
   min-width: 20vw;
   height: auto;
   width: auto;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
   border-radius: 14px;
+  /* margin-top: 0.8  rem; */
 }
 .cart-header {
   display: flex;

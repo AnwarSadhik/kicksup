@@ -6,6 +6,8 @@ export const globalCtx = React.createContext();
 export const GlobalProvider = ({ children }) => {
   const [products, setProducts] = React.useState([]);
   const [cart, setCart] = React.useState([]);
+  const [filteredProducts, setFilteredProducts] = React.useState([]);
+
 
   const addItemToCart = (item) => {
     setCart([...cart, item]);
@@ -20,14 +22,17 @@ export const GlobalProvider = ({ children }) => {
     setProducts(data);
   }, []);
 
-  console.log(cart)
+  // console.log(cart)
   return (
     <globalCtx.Provider
       value={{
         products,
+        setProducts,
         cart,
         addItemToCart,
         removeItemFromCart,
+        filteredProducts, 
+        setFilteredProducts,
       }}
     >
       {children}

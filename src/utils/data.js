@@ -5,26 +5,27 @@ export const data = [
         name: "KSL 01",
         price: 3300,
         image: "/assets/shoe2.png",
-        color: "blue",
-        designTemplate: 3,
+        color: "white",
+        design: "3",
         type: "sneaker"
     },
     {
         id: 2,
-        name: "SL grad sportz",
-        price: 5000,
-        image: "/assets/shoe1.png",
-        color: "blue",
-        designTemplate: 2,
-        type: "sneaker"
+        name: "loaf highs",
+        price: 1200,
+        image: "/assets/loafer2.png",
+        color: "grey",
+        design: "2",
+        type: "loafer"
     },
+  
     {
         id: 3,
         name: "Nightball core",
         price: 13000,
         image: "/assets/shoe3.png",
-        color: ["black","grey"],
-        designTemplate: 4,
+        color: "black",
+        design: "4",
         type: "sneaker"
     },
     {
@@ -33,25 +34,29 @@ export const data = [
         price: 2000,
         image: "/assets/loafer1.png",
         color: "brown",
-        designTemplate: 2,
-        type: "sneaker"
+        design: "2",
+        type: "loafer"
     },
     {
         id: 5,
-        name: "loaf highs",
-        price: 1200,
-        image: "/assets/loafer2.png",
-        color: "grey",
-        designTemplate: 2,
+        name: "SL grad sportz",
+        price: 5000,
+        image: "/assets/shoe1.png",
+        color: "black",
+        design: "2",
         type: "sneaker"
     },
+ 
     {
         id: 6,
         name: "loaf dark DG",
-        price: 4000,
+        price: 4400,
         image: "/assets/loafer3.png",
         color: "black",
-        designTemplate: 4,
-        type: "sneaker"
+        design: "3",
+        type: "loafer"
     },
 ]
+
+
+
